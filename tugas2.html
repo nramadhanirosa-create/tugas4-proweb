@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membuat Form</title>
+    <link rel="stylesheet" href="form.css">
+    <style>
+    
+b{
+            color: rgb(90, 34, 34);
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        h1{
+            color: rgb(76, 76, 132);
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+        }
+        input{
+        color: rgb(13, 52, 32);
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        p1{
+        color: rgb(32, 128, 104);
+            font-size: 17px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        p2{
+        color: rgb(207, 36, 156);
+            font-size: 17px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        p3{
+        color: rgb(93, 108, 9);
+            font-size: 17px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="form-container">
+    <h1>FORM DATA DIRI</h1>
+
+    <fieldset>
+        <legend>Akun</legend>
+
+    <form>
+        <!--Text-->
+        <label><b>Nama Lengkap</b></label>
+        <input type="text" name="nama" placeholder="masukkkan nama"><br><br>
+
+        <!--Password-->
+        <label for="password"><b>Password</b></label>
+         &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;<input type="password"  name="Password" placeholder="masukkan password"></label> <br><br>
+
+         <!--Textarea-->
+        <label><b>Alamat</b></label>
+         &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;<textarea name="alamat" placeholder="masukkkan alamat"></textarea><br><br>
+
+         </fieldset>
+<fieldset>
+         <!--radio button-->
+         <label><b>Jenis Kelamin</b></label><br>
+         <div class="option">
+         <input type="radio" name="Jenis_Kelamin" value="Laki-laki"><p1>Laki-laki</p1><br>
+         <input type="radio" name="Jenis_Kelamin" value="Perempuan"><p2>Perempuan</p2><br><br>
+         
+         <!--Checkbox-->
+         <label><b>Hobi</b></label><br>
+         <div class="option">
+         <input type="checkbox" name="hobi" value="Memasak"><p3>Memasak🍳</p3><br>
+         <input type="checkbox" name="hobi" value="Membaca"><p3>Membaca📖</p3><br>
+         <input type="checkbox" name="hobi" value="Menonton"><p3>Menonton📺</p3><br>
+         <input type="checkbox" name="hobi" value="Bermain Badminton"><p3>Bermain Badminton🏸</p3><br><br>
+
+         <!--Select Option-->
+         <label><b>Program Studi</b></label>
+         <select name="Prodi"><br><br>
+           <option value="TI">Teknologi Informasi</option>
+           <option value="ILKOM">Ilmu Komputer</option>
+           <option value="SI">Sistem Informasi</option>
+           <option value="TI">Teknik Informatika</option>
+         </select>
+        </fieldset>
+         <br>
+         <!--Submit-->
+<form>
+  
+  <input type="submit" value="submit" >
+</form>
+
+         </div>
+
+</body> 
+</html>
